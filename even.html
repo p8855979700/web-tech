@@ -1,17 +1,24 @@
+<!document>
 <html>
-	<head></head>
-	<body>
+	<head>
 	<script>
-	var num=10;
-	if(num%2==0)
+	function odd_even()
 	{
-	document.write("even");
+	var n;
+	n=Number(document.getElementById("no_input").value);
+	if(n%2==0)
+	{
+	document.write("Even number");
 	}
 	else
 	{
-	document.write("odd");
+	document.write("odd number");
 	}
-	
+	}
 	</script>
+	</head>
+	<body>
+	Enter any number:<input id="no_input"><br />
+	<button onclick="odd_even()">click me</button>
 	</body>
 </html>
